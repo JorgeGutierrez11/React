@@ -8,7 +8,7 @@ export function Products ({ products }) {
                 {products.slice(0,10).map(product => (
                     <li key={product.id}>
                         <img
-                            srs={product.thumbnail}
+                            src={product.thumbnail}
                             alt={product.title}
                         />
                         
