@@ -12,6 +12,7 @@ export function Products({ products }) {
     return (
         <main className='products'>
             <ul>
+<<<<<<< HEAD
                 {products.slice(0, 10).map(product => {
                     const isProductInCart = checkProductInCart(product)
 
@@ -36,6 +37,25 @@ export function Products({ products }) {
                         </li>
                     )
                 })}
+=======
+                {products.slice(0,10).map(product => (
+                    <li key={product.id}>
+                        <img
+                            src={product.thumbnail}
+                            alt={product.title}
+                        />
+                        
+                        <div>
+                            <strong>{product.title}</strong> - ${product.price}
+                        </div>
+                         <div>
+                            <button>
+                                <AddToCartIcon/>
+                            </button>
+                         </div>
+                    </li>
+                ))}
+>>>>>>> 4e993bac3a5ac0228d99751461b0ae5670fc1f5c
             </ul>
         </main>
     )
